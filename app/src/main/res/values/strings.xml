@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">PERMISOS (SWITCH)</string>
+    <string name="app_name">PERMISOS SWITCH</string>
+    <string name="almacenamiento">Almacenamiento Externo</string>
+    <string name="contactos">Leer contactos</string>
+    <string name="calendario">Leer calendario</string>
+    <string name="registrollamadas">Camara</string>
+    <string name="inbox">Leer SMS</string>
+    <string name="finish">Salir</string>
 </resources>

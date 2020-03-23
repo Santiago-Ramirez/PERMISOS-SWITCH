@@ -4,15 +4,119 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimary">
 
     <TextView
+        android:id="@+id/leerAlmacenamientoExterno"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/almacenamiento"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/almacenamientoExterno"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/almacenamientoExterno"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/leerAlmacenamientoExterno"/>
+
+    <TextView
+        android:id="@+id/contactos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginEnd="8dp"
+        android:text="@string/contactos"
+        android:textSize="20sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/leerAlmacenamientoExterno"
+        app:layout_constraintTop_toBottomOf="@+id/leerAlmacenamientoExterno" />
+
+    <Switch
+        android:id="@+id/leerContactos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/almacenamientoExterno"
+        app:layout_constraintTop_toTopOf="@+id/contactos" />
+
+
+
+    <TextView
+        android:id="@+id/Calendary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calendario"
+        android:textSize="20sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/contactos"
+        app:layout_constraintTop_toBottomOf="@+id/contactos" />
+
+    <Switch
+        android:id="@+id/Calendario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/leerContactos"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/leerContactos"
+        app:layout_constraintTop_toTopOf="@+id/Calendary" />
+
+    <TextView
+        android:id="@+id/Camara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registrollamadas"
+        android:textSize="20sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Calendary"
+        app:layout_constraintTop_toBottomOf="@+id/Calendary" />
+
+    <Switch
+        android:id="@+id/Camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/Calendario"
+        app:layout_constraintStart_toStartOf="@+id/Calendario"
+        app:layout_constraintTop_toTopOf="@+id/Camara" />
+
+    <TextView
+        android:id="@+id/inbax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="292dp"
+        android:text="@string/inbox"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/Calendario"
+        app:layout_constraintTop_toTo="@+id/Camara"
+        tools:layout_editor_absoluteY="132dp" />
+
+    <Switch
+        android:id="@+id/msjes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/inbax"
+        app:layout_constraintEnd_toEndOf="@+id/Calendario"
+        app:layout_constraintStart_toStartOf="@+id/Camera" />
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="360dp"
+        android:text="@string/finish"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
