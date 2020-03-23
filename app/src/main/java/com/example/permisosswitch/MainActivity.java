@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+//MI COMIT
         switches[0] = findViewById(R.id.almacenamientoExterno);
         switches[1] = findViewById(R.id.leerContactos);
         switches[2] = findViewById(R.id.Calendario);
