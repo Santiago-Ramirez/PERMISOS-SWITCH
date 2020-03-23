@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     Toast.makeText(getBaseContext(),permission_info,Toast.LENGTH_LONG).show();
                     switches[i].setChecked(true);
                 } else {
-                    permission_info += "PERMISO DENEGADO";
+                    permission_info += "PERMISO DESACTIVADO";
                     switches[i].setChecked(false);
                     Toast.makeText(getBaseContext(),permission_info,Toast.LENGTH_LONG).show();
                 }
